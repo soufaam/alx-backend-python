@@ -4,7 +4,7 @@ import random
 import asyncio
 
 
-async def wait_random(max_delay: int=10)->float:
+async def wait_random(max_delay: int = 10) -> float:
     """This a couroutine function
     """
     random_value = random.uniform(0, max_delay)
