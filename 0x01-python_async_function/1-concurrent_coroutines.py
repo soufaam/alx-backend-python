@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """This the second module 0x01-python_async_function project"""
 import asyncio
-wait_random = __import__('0-basic_async_syntax').wait_random
 from typing import List
+wait_random = __import__('0-basic_async_syntax').wait_random
+
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
@@ -16,4 +17,4 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     delays_list = [wait_random(max_delay) for _ in range(n)]
     delays_list = await asyncio.gather(*delays_list)
-    return (delays_list)
+    return sorted(delays_list)
