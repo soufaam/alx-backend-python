@@ -4,7 +4,7 @@ import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list[float]:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """ async routine called wait_n
     Args:
         n (int): _description_
@@ -15,4 +15,4 @@ async def wait_n(n: int, max_delay: int) -> list[float]:
     """
     delays_list = [wait_random(max_delay) for _ in range(n)]
     delays_list = await asyncio.gather(*delays_list)
-    return delays_list
+    return (delays_list)
