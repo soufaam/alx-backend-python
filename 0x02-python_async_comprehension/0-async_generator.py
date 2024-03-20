@@ -2,9 +2,10 @@
 """This the third module 0x01-python_async_function project"""
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     """coroutine
     """
     for _ in range(10):
