@@ -3,6 +3,6 @@
 """
 
 
-def concat(n: float) -> str:
+def to_str(n: float) -> str:
     """ an annotated function """
     return str(n)
