@@ -6,6 +6,6 @@ from typing import List, Union
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     """sumlist function"""
     sum: float = 0
-    for number in input_list:
+    for number in mxd_lst:
         sum += number
     return sum
